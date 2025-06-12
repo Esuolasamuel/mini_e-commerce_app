@@ -1,11 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit"
 import { fetchAllProducts, fetchAProduct } from "./actions";
 import { saveState } from "./localStorage";
+import cart from "@/pages/cart";
 
 const initialState = {
   products: [],
   product: {},
-  cart:  [],
+  cart: [],
+  cartItemPresent: false,
   error: null,
   fetchLoading: false,
   productLoading: false,
@@ -24,12 +26,14 @@ const productSlice = createSlice({
       } else {
         state.cart = [...state.cart, { id, title, price, image, category, quantity: 1 }];
         saveState(state.cart);
+        state.cartItemPresent = true;
       }
     },
     removeFromCart: (state, action) => {
       const idToRemove = action.payload;
       state.cart = state.cart.filter(item => item.id !== idToRemove);
       saveState(state.cart);
+      state.cartItemPresent = false;
     },
     incrementQuantity: (state, action) => {
       const idToIncrement = action.payload;

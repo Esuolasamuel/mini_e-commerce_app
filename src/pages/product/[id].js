@@ -48,7 +48,7 @@ const ProductDetail = () => {
               <hr/>
               <p className='my-2 fw-lighter fs-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu lacus imperdiet, cursus erat vitae, dictum nulla. Mauris et euismod sed nunc. Proin vel rhoncus mauris. Quisque mattis dictum etiam.</p>
             </header>
-              <main className="row m-5 p-5 d-flex justify-content-between">
+              <main className="row m-md-5 p-md-5 m-sm-0 p-sm-0 d-flex justify-content-between">
               <div className='image-container text-center col-md-6 col-sm-12'>
                 <img src={product?.image} alt={product?.title} className="img-fluid"/>
               </div>

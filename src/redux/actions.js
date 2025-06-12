@@ -3,7 +3,6 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 const fetchAllProducts = createAsyncThunk('fetch_All_Products', async () => {
   const response = await fetch('https://fakestoreapi.com/products')
   const data = await response.json()
-  console.log(data);
   return data;
 })
 const fetchAProduct = createAsyncThunk('fetch_A_Product', async (product_id) => {

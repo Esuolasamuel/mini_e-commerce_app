@@ -4,8 +4,8 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-<nav className="navbar navbar-expand-lg navbar-light bg-light p3-5">
-  <div className="container-fluid mx-5">
+<nav className="navbar navbar-expand-lg navbar-light bg-light px-lg-5 px-md-4 px-sm-3 px-2">
+  <div className="container-fluid mx-lg-5 mx-md-4 mx-sm-3 mx-2">
         <a className="navbar-brand fw-bold" href="#">ProductStore</a>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>

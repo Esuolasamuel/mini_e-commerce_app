@@ -32,7 +32,7 @@ const CartTable = () => {
     <div className='card shadow-sm'>
       <h2 className="card-title text-dark my-4 text-center">Your Shopping Cart</h2>
       <div className="table-responsive">
-        <table className="table table-striped table-hover align-middle ">
+        <table className="table table-striped table-responsive table-hover align-middle ">
           <thead className="table-light">
             <tr>
               <th scope='col'>ITEM</th>
