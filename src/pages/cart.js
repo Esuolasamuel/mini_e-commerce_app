@@ -14,7 +14,7 @@ useEffect(() => {
 }, [dispatch]);
 
   const { cart } = useSelector((state) => state.products);
-  
+
   return (
     <div>
       {
