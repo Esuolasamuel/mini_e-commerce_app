@@ -74,7 +74,7 @@ const productSlice = createSlice({
       })
       .addCase(fetchAllProducts.rejected, (state, action) => {
             state.fetchError = action.error.message;
-    })
+      })
   }
 })
 
